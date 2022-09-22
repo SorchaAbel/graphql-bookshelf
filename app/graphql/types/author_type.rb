@@ -7,5 +7,12 @@ module Types
     field :last_name, String
     field :dob, Integer
     field :is_alive, Boolean
+    field :full_name, String, null: true
+
+    def full_name
+      "#{object.first_name} #{object.last_name}"
+    end
+
+    field :coordinates, Types::CoordinatesType, null: false
   end
 end
