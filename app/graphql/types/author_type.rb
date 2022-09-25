@@ -5,7 +5,7 @@ module Types
     field :id, ID, null: false
     field :first_name, String
     field :last_name, String
-    field :dob, Integer
+    field :dob, Int
     field :is_alive, Boolean
     field :full_name, String, null: true
 
@@ -17,3 +17,4 @@ module Types
     field :publication_years, [Int], null: false
   end
 end
+
