@@ -15,7 +15,7 @@ module Types
 
     field :coordinates, Types::CoordinatesType, null: false
     field :publication_years, [Int], null: false
-    field :errors, [Types::ErrorTypes], null: true
+    field :errors, [Types::ErrorType], null: true
   end
 
   def errors
